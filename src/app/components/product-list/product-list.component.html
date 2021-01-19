@@ -1,0 +1,18 @@
+<mat-card class="grid-box" *ngFor="let tempProduct of products | async">
+  <mat-card-content>
+    <br>
+    <img mat-card-image src="{{ tempProduct.imageUrl }}" alt="Systems" id="pimg">
+   
+    <h2>{{ tempProduct.name }}</h2>
+    <div class="price">{{ tempProduct.price | currency:'INR' }}</div>
+    <mat-card-actions id="button">
+      <button mat-raised-button color="warn">Wishlist</button>
+      <button mat-raised-button color="warn" (click)="addToCart(tempProduct)">Add To Cart</button>
+    </mat-card-actions>
+   
+  </mat-card-content>
+
+</mat-card>
+<!-- <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+  <div id="preview"></div>
+</div> -->
