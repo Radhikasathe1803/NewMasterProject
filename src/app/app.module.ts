@@ -23,7 +23,7 @@ import { PcComponentsComponent } from './components/pc-components/pc-components.
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './components/cart/cart.component';
-
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -36,25 +36,10 @@ import { CartComponent } from './components/cart/cart.component';
     CartComponent,
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    NgMatSearchBarModule,
-    HttpClientModule,
-    NgxSpinnerModule,
-    MatTableModule,
-    FormsModule,
-    ReactiveFormsModule
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,LayoutModule, MatToolbarModule,
+    MatButtonModule,MatSidenavModule,MatIconModule, MatListModule, MatGridListModule,MatCardModule,
+    MatMenuModule,NgMatSearchBarModule, HttpClientModule, NgxSpinnerModule, MatTableModule,FormsModule,
+    ReactiveFormsModule,MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
